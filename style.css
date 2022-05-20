@@ -1,0 +1,134 @@
+:root {
+    /*-- BUTTON COLORS --*/
+    --bt-base: #fc033d;
+    --bt-hover: #fc285a;
+    --bt-press: #d60233;
+}
+
+.nav {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+    background: none;
+    border-radius: 18px;
+    z-index: 999;
+    padding: 25px;
+    color: white;
+}
+
+@font-face {
+    font-family: 'pixFont';
+    src: url("UbuntuMono-Regular.ttf") format("truetype");
+}
+
+.navTitle {
+    font-family: "pixFont", monospace;
+    font-size: 32px;
+    margin-bottom: 5px;
+    color: #ffc9d6;
+}
+
+.navTitle a {
+    text-decoration: none;
+    caret-color: rgba(0, 0, 0, 0);
+    padding-bottom: 5px;
+    border-bottom: 1.5px solid #ffc9d6;
+    color: #ffc9d6;
+}
+
+.navTitle a:link {
+    color: #ffc9d6
+}
+
+.navTitle a:visited {
+    color: #ffc9d6;
+}
+
+.navTitle a:hover {
+    color: #ffd9e6;
+    border-bottom-color: #ffd9e6;
+}
+
+.navtitle a:selected {
+    color: #ffc9d6;
+}
+
+.compButton {
+    background: var(--bt-base);
+    border: none;
+    color: #ffc9d6;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: background 0.3s;
+    font-family: "pixFont", monospace;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+    border-radius: 12px;
+
+}
+
+.compButton:hover {
+    background: var(--bt-hover);
+}
+
+.compButton:active {
+    background: var(--bt-press);
+}
+
+#sadiv {
+    border-radius: 12px;
+    background-color: rgba(5, 3, 4, 0.6);
+    color: #fecdd8;
+    padding: 1em;
+    font-family: "pixFont", monospace;
+    white-space: pre-wrap;
+    text-align: left;
+    box-shadow: 0px 0px 16px 3px black;
+    margin-bottom:5px;
+}
+
+#nxtbt {
+    background: none;
+    color: #fecdd8;
+    font-size: 42px;
+    border: none;
+    position: absolute;
+    margin-top: -10px;
+    transform: rotate(90deg);
+    cursor:pointer;
+}
+
+#elementsContent{
+    padding: 0%;
+    margin-block-start:0%;
+}
+#elementsContent li {
+    margin-left:0;
+    text-decoration: none;
+    background-image: linear-gradient(to right, rgba(254,205,216 ) 65%,rgba(254,205,216,0));
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    
+    transition: background-size .5s ease, background-image .5s linear;
+    width:fit-content;
+}
+
+#elementsContent li:not(:last-child) {
+    margin-bottom:0.4em;
+}
+
+#elementsContent li:hover{
+    background-size: 100% 2px;
+}
+
+#elemtsContent li:not(:hover) {
+    background-size: 0% 2px;
+}
