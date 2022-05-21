@@ -119,6 +119,8 @@
     
     transition: background-size .5s ease, background-image .5s linear;
     width:fit-content;
+
+    cursor: pointer;
 }
 
 #elementsContent li:not(:last-child) {
