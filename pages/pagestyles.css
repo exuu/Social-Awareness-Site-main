@@ -1,0 +1,30 @@
+
+#empathyContent{
+ padding: 0%;
+ margin-block-start:0%;
+}
+#empathyContent li {
+ margin-left:0;
+ text-decoration: none;
+ background-image: linear-gradient(to right, rgba(254,205,216 ) 65%,rgba(254,205,216,0));
+ background-position: bottom left;
+ background-repeat: no-repeat;
+ background-size: 0% 2px;
+ 
+ transition: background-size .5s ease, background-image .5s linear;
+ width:fit-content;
+
+ cursor: pointer;
+}
+
+#empathyContent li:not(:last-child) {
+ margin-bottom:0.4em;
+}
+
+#empathyContent li:hover{
+ background-size: 100% 2px;
+}
+
+#elemtsContent li:not(:hover) {
+ background-size: 0% 2px;
+}
