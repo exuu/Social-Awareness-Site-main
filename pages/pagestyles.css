@@ -12,7 +12,7 @@
  background-size: 0% 2px;
 
  transition: background-size .5s ease, background-image .5s linear;
- 
+
  width:fit-content;
  cursor: help;
 }
@@ -35,7 +35,6 @@
 }
 
 .tooltip:hover {
- color: #c00;
  text-decoration: none;
 }
 
@@ -45,7 +44,7 @@
  border-radius: .5em;
  bottom: 1.35em;
  color: #fff;
- content: attr(title);
+ content: attr(data-text);
  display: block;
  left: 1em;
  padding: .3em 1em;
