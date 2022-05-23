@@ -171,6 +171,7 @@
                 var skDv = $('#skilldv');
                 var iC = $("#generalContent");
                 var eC = $("#elementsContent");
+                var nxbt = $("nxtbt");
                 eC.css("opacity","0");
                 function nxtInfo() {
                     switch(curPage) {
@@ -184,6 +185,9 @@
                                     opacity: 1
                                 },'slow','linear');
                                 curPage = curPage+1;
+                                nxbt.fadeOut("slow",function() {
+                                    nxbt.hide();
+                                });
                             })
                             break;
                         case 1:
@@ -194,13 +198,15 @@
                 function emCL() {
                     skDv.fadeOut('slow', function(){
                         skDv.hide();
-                    });
                     window.open("./pages/empathy.html","_self")
+                    });
+
                 }
 
                 function liCL() {
                     skDv.fadeOut('slow', function(){
                         skDv.hide();
+                    window.open("./pages/listening.html","_self")
                     });
 
                 }
@@ -208,6 +214,7 @@
                 function obCL () {
                     skDv.fadeOut('slow', function(){
                         skDv.hide();
+                    window.open("./pages/observing.html","_self")
                     });
 
                 }
@@ -215,6 +222,7 @@
                 function unCL () {
                     skDv.fadeOut('slow', function(){
                         skDv.hide();
+                    window.open("./pages/understanding.html","_self")
                     });
 
                 }
