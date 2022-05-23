@@ -32,6 +32,7 @@
 .tooltip {
  display: inline;
  position: relative;
+ white-space:pre-line;
 }
 
 .tooltip:hover {
