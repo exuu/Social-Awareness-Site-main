@@ -43,7 +43,6 @@
  background: rgba(0,0,0,.8);
  border-radius: .5em;
  bottom: 1.35em;
- color: #fff;
  content: attr(data-text);
  display: block;
  left: 1em;
